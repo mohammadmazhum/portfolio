@@ -178,10 +178,11 @@ export default function Portfolio() {
       stack: "MongoDB · Express · React · Node.js · Socket.io",
       date: "Jul 2026",
       points: [
-        "Built a real-time messaging platform with JWT authentication, 1-on-1 and group conversations, and live presence tracking",
-        "Automated message delivery and typing indicators via Socket.io room-based broadcasting",
+        "Built a full-stack real-time messaging platform with JWT-based authentication and support for one-to-one and group conversations.",
+        "Implemented Socket.io for real-time message delivery, typing indicators, online/offline presence, and room-based communication.",
+        "Designed REST APIs with Node.js and Express, integrated MongoDB for data persistence, and deployed the application using Render and MongoDB Atlas."
       ],
-      link: "github.com/mohammadmazhum",
+      link: "https://mern-chat-frontend-0bxv.onrender.com/",
     },
     {
       id: "fest",
