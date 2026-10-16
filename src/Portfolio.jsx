@@ -2,7 +2,8 @@ import React, { useState, useEffect, useRef } from "react";
 import { Github, Linkedin, Mail, Phone, MapPin, ExternalLink, Terminal, ChevronRight, MessageCircle, Users, Trophy, Calendar, Send, Circle } from "lucide-react";
 import PROFILE_IMG_PLACEHOLDER from "./profile.jpg";
 import CHAT_PREVIEW from "./chat-preview.png";
-
+import SOCIAL_MEDIA_PREVIEW from "./social-media-preview.png";
+import SECURE_SHARE_PREVIEW from "./secure-share-preview.png";
 
 const TYPED_LINES = [
   "whoami",
@@ -134,6 +135,19 @@ export default function Portfolio() {
 
   const projects = [
     {
+      id: "social-media",
+      title: "Mini Social Media Application",
+      stack: "Spring Boot · React · MongoDB · Spring Security · Cloudinary",
+      date: "Oct 2026",
+      points: [
+        "Developed a full-stack social media platform with JWT-based authentication, user registration, profile management, and follow/unfollow functionality.",
+        "Implemented social interactions including post creation, image uploads, likes, and comments, with Cloudinary for media storage.",
+        "Integrated MongoDB Atlas using Spring Data MongoDB and secured backend APIs with Spring Security."
+      ],
+      link: "https://mini-social-media-sigma.vercel.app",
+      image: SOCIAL_MEDIA_PREVIEW,
+    },
+    {
       id: "chat",
       title: "Real-Time Chat Application",
       stack: "MongoDB · Express · React · Node.js · Socket.io",
@@ -145,6 +159,19 @@ export default function Portfolio() {
       ],
       link: "https://mern-chat-frontend-0bxv.onrender.com/",
       image: CHAT_PREVIEW,
+    },
+    {
+      id: "secure-share",
+      title: "Secure File Sharing System",
+      stack: "MongoDB · Express · React · Node.js · JWT · AES-256-GCM · Docker · Kubernetes",
+      date: "Oct 2026",
+      points: [
+        "Built a full-stack file-sharing platform with JWT authentication and secure file sharing through expiring links, password protection, and download limits.",
+        "Implemented AES-256-GCM encryption to protect files and added audit logs and activity tracking for improved security and accountability.",
+        "Containerized the application using Docker and explored Kubernetes for container orchestration and deployment."
+      ],
+      link: "https://github.com/mohammadmazhum/secure-file-sharing",
+      image: SECURE_SHARE_PREVIEW,
     },
     {
       id: "fest",
